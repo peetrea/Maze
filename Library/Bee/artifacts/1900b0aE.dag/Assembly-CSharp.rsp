@@ -352,9 +352,16 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Scripts/MazeCellObjects.cs"
-"Assets/Scripts/MazeGenerator.cs"
-"Assets/Scripts/MazeRenderer.cs"
+"Assets/MazeGenerator/Scripts/BasicMazeGenerator.cs"
+"Assets/MazeGenerator/Scripts/DivisionMazeGenerator.cs"
+"Assets/MazeGenerator/Scripts/MazeCell.cs"
+"Assets/MazeGenerator/Scripts/MazeSpawner.cs"
+"Assets/MazeGenerator/Scripts/OldestTreeMazeGenerator.cs"
+"Assets/MazeGenerator/Scripts/RandomTreeMazeGenerator.cs"
+"Assets/MazeGenerator/Scripts/RecursiveMazeGenerator.cs"
+"Assets/MazeGenerator/Scripts/RecursiveTreeMazeGenerator.cs"
+"Assets/MazeGenerator/Scripts/RollerBall.cs"
+"Assets/MazeGenerator/Scripts/TreeMazeGenerator.cs"
 -langversion:9.0
 
 /deterministic
