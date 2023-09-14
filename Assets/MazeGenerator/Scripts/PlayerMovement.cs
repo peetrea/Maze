@@ -129,5 +129,8 @@ public class PlayerMovement : MonoBehaviour
 		if (other.gameObject.tag.Equals ("Coin")) {
 			Destroy(other.gameObject);
 		}
+		if (other.gameObject.tag.Equals ("FinishGame")) {
+			Debug.LogError("FinishGame");
+		}
 	}
 }
