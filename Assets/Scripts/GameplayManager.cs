@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameplayManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class GameplayManager : MonoBehaviour
     public GameObject LosePanel;
     public GameObject PausePanel;
     private bool isGamePaused = false;
+    public int score = 0;
+    public TextMeshProUGUI scoreText;
     void Start()
     {
         // scoreDisplay = FindObjectOfType<ScoreDisplay>();
@@ -21,6 +24,7 @@ public class GameplayManager : MonoBehaviour
     {
         // scoreDisplay.UpdateScoreText();
         // FinishLevel();
+        ShowScore();
         SwitchPause();
     }
     // public void FinishLevel()
@@ -52,10 +56,14 @@ public class GameplayManager : MonoBehaviour
             {
                 PauseGame();
                 PausePanel.SetActive(true);
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
             }
             else
             {
                 ResumeGame();
+                Cursor.lockState = CursorLockMode.Locked;
+                Cursor.visible = false;
             }
         }
     }
@@ -64,6 +72,7 @@ public class GameplayManager : MonoBehaviour
         Debug.Log("apelled");
         Time.timeScale = 0f;
         isGamePaused = true;
+        PausePanel.SetActive(true);
     }
     public void ResumeGame()
     {
@@ -73,13 +82,27 @@ public class GameplayManager : MonoBehaviour
     }
     public void BackToMenu()
     {
-        // GlobalManager.Instance.GoToMenu();
+        SceneManager.LoadScene("Menu");
         ResumeGame();
     }
     public void Restart()
     {
-        // GlobalManager.Instance.RestartCurrentScene();
         ResumeGame();
+    }
+    public void IncremenentScore()
+    {
+        score += 1;
+    }
+    private void ShowScore()
+    {
+        scoreText.text = score.ToString();
+    }
+    public void Win()
+    {
+        if (score == 10)
+        {
+            
+        }
     }
     // private void SetScore()
     // {

@@ -5,11 +5,11 @@ using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
+    public GameplayManager gameplayManager;
     [Header("Movement")]
     public float moveSpeed;
     public float moveSpeedNormal;
     public float groundDrag;
-
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
@@ -128,9 +128,10 @@ public class PlayerMovement : MonoBehaviour
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag.Equals ("Coin")) {
 			Destroy(other.gameObject);
+            gameplayManager.IncremenentScore();
 		}
 		if (other.gameObject.tag.Equals ("FinishGame")) {
-			Debug.LogError("FinishGame");
+			gameplayManager.WinPanel.SetActive(true);
 		}
 	}
 }
