@@ -18,8 +18,8 @@ public class MazeSpawner : MonoBehaviour
     public GameObject Floor = null;
     public GameObject Wall = null;
     public GameObject Pillar = null;
-    public int Rows = 5;
-    public int Columns = 5;
+    int Rows;
+    int Columns;
     public float CellWidth = 5;
     public float CellHeight = 5;
     public bool AddGaps = true;
@@ -30,6 +30,8 @@ public class MazeSpawner : MonoBehaviour
 
     void Start()
     {
+        Rows = SaveSystem.LoadInt("Rows");
+        Columns = SaveSystem.LoadInt("Columns");
         if (!FullRandom)
         {
             Random.seed = RandomSeed;

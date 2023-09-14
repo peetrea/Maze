@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
+    public LevelsManager levelsManager;
     public GameObject menu;
     public GameObject levelSelection;
     public GameObject coinsLevels;
@@ -13,6 +14,7 @@ public class Menu : MonoBehaviour
     public GameObject settings;
     void Start()
     {
+        levelsManager.StartCoinLevel();
         
     }
     void Update()

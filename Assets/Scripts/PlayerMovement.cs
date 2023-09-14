@@ -131,7 +131,7 @@ public class PlayerMovement : MonoBehaviour
             gameplayManager.IncremenentScore();
 		}
 		if (other.gameObject.tag.Equals ("FinishGame")) {
-			gameplayManager.WinPanel.SetActive(true);
+			gameplayManager.CeckWin();
 		}
 	}
 }

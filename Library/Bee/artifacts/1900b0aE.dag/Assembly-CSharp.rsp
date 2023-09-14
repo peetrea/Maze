@@ -355,6 +355,7 @@
 "Assets/Scripts/BasicMazeGenerator.cs"
 "Assets/Scripts/DivisionMazeGenerator.cs"
 "Assets/Scripts/GameplayManager.cs"
+"Assets/Scripts/LevelsManager.cs"
 "Assets/Scripts/MazeCell.cs"
 "Assets/Scripts/MazeSpawner.cs"
 "Assets/Scripts/Menu.cs"
@@ -366,6 +367,7 @@
 "Assets/Scripts/RecursiveMazeGenerator.cs"
 "Assets/Scripts/RecursiveTreeMazeGenerator.cs"
 "Assets/Scripts/RollerBall.cs"
+"Assets/Scripts/SaveSystem.cs"
 "Assets/Scripts/TreeMazeGenerator.cs"
 -langversion:9.0
 
