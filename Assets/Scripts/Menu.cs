@@ -5,18 +5,19 @@ using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
-    // private TotalScore totalScore;
     public GameObject menu;
     public GameObject levelSelection;
+    public GameObject coinsLevels;
+    public GameObject timeLevels;
+    public GameObject levelType;
     public GameObject settings;
     void Start()
     {
-        // totalScore = FindObjectOfType<TotalScore>();
         
     }
     void Update()
     {
-        // totalScore.UpdateTotalScoreText();
+
     }
 
     public void OpenLevelSelection()
@@ -24,12 +25,28 @@ public class Menu : MonoBehaviour
         menu.SetActive(false);
         levelSelection.SetActive(true);
     }
+    public void OpenCoinsLevels()
+    {
+        levelType.SetActive(false);
+        coinsLevels.SetActive(true);
+    }
+    public void OpenTimeLevels()
+    {
+        levelType.SetActive(false);
+        timeLevels.SetActive(true);
+    }
 
-    public void CloseLevelSelection()
+    public void BackToMenu()
     {
         levelSelection.SetActive(false);
         settings.SetActive(false);
         menu.SetActive(true);
+    }
+    public void BackToLevelType()
+    {
+        timeLevels.SetActive(false);
+        coinsLevels.SetActive(false);
+        levelType.SetActive(true);
     }
 
     public void OpenSettings()
@@ -46,8 +63,7 @@ public class Menu : MonoBehaviour
 
     public void StartLevel1()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("Level 1");
-        // GlobalManager.Instance.score = 10;
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GamePlay");
     }
 
     public void ExitGame()
