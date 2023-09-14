@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638301924215945664
-    m_Hash: 1619047885
+      ticks: 638302884581550909
+    m_Hash: 2261361575
   m_LockFileStatus:
     m_FilePath: C:/Users/bosst/Documents/GitHub/Maze/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638301924438495858
-    m_Hash: 549443909
+      ticks: 638302884581560926
+    m_Hash: 2004748610
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
