@@ -7,13 +7,14 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("Movement")]
     public float moveSpeed;
-
+    public float moveSpeedNormal;
     public float groundDrag;
 
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
     bool readyToJump;
+    bool isShiftPressed = false;
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
 
@@ -31,6 +32,7 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector] public TextMeshProUGUI text_speed;
     private void Start()
     {
+        moveSpeedNormal = moveSpeed;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
 
@@ -43,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
 
         MyInput();
         SpeedControl();
+        Run();
 
         // handle drag
         if (grounded)
@@ -60,7 +63,6 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
-        // when to jump
         if(Input.GetKey(jumpKey) && readyToJump)
         {
             readyToJump = false;
@@ -68,20 +70,16 @@ public class PlayerMovement : MonoBehaviour
             Jump();
 
             Invoke(nameof(ResetJump), jumpCooldown);
-            Debug.Log("Jumop");
         }
     }
 
     private void MovePlayer()
     {
-        // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        // on ground
         if(grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
 
-        // in air
         else if(!grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
     }
@@ -90,26 +88,46 @@ public class PlayerMovement : MonoBehaviour
     {
         Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
 
-        // limit velocity if needed
         if(flatVel.magnitude > moveSpeed)
         {
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
             rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
         }
-
         // text_speed.SetText("Speed: " + flatVel.magnitude);
+    }
+    private void Run()
+    {
+        if (Input.GetKeyDown(KeyCode.LeftShift))
+        {
+            isShiftPressed = true;
+        }
+        if (Input.GetKeyUp(KeyCode.LeftShift))
+        {
+            isShiftPressed = false;
+        }
+        if(isShiftPressed)
+        {
+            moveSpeed = 10f;
+        }
+        else
+        {
+            moveSpeed = moveSpeedNormal;
+        }
     }
 
     private void Jump()
     {
-        // reset y velocity
-        Debug.Log("Jump");
         rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
-
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
     private void ResetJump()
     {
         readyToJump = true;
     }
+
+	void OnTriggerEnter(Collider other) {
+		if (other.gameObject.tag.Equals ("Coin")) {
+			Destroy(other.gameObject);
+		}
+	}
 }
