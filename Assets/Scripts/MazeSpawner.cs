@@ -20,11 +20,13 @@ public class MazeSpawner : MonoBehaviour
     public GameObject Pillar = null;
     int Rows;
     int Columns;
+    int Enemys;
     public float CellWidth = 5;
     public float CellHeight = 5;
     public bool AddGaps = true;
     public GameObject GoalPrefab = null;
-    public GameObject FinishPrefab = null; // Adăugați șablonul pentru zona de finish
+    public GameObject FinishPrefab = null;
+    public GameObject EnemyPrefab;
 
     private BasicMazeGenerator mMazeGenerator = null;
 
@@ -32,6 +34,16 @@ public class MazeSpawner : MonoBehaviour
     {
         Rows = SaveSystem.LoadInt("Rows");
         Columns = SaveSystem.LoadInt("Columns");
+        Enemys = 1;
+        for (int i = 0; i < Enemys; i++)
+        {
+            int randomRow = Random.Range(0, Rows);
+            int randomColumn = Random.Range(0, Columns);
+            float x = randomColumn * (CellWidth + (AddGaps ? 0.2f : 0));
+            float z = randomRow * (CellHeight + (AddGaps ? 0.2f : 0));
+
+            Instantiate(EnemyPrefab, new Vector3(x, 1f, z), Quaternion.identity);
+        }
         if (!FullRandom)
         {
             Random.seed = RandomSeed;

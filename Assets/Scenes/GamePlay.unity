@@ -1651,6 +1651,7 @@ MonoBehaviour:
   AddGaps: 0
   GoalPrefab: {fileID: 159624, guid: 850205124263c924ea0aa82f0fdf2673, type: 3}
   FinishPrefab: {fileID: 165842, guid: bab44a5fbe446fa45b19b1c390470d19, type: 3}
+  EnemyPrefab: {fileID: 2491930616511854381, guid: 885dd2703679fdf4c8f4cf15a8166e72, type: 3}
 --- !u!1 &974187726
 GameObject:
   m_ObjectHideFlags: 0
@@ -3462,7 +3463,7 @@ GameObject:
   - component: {fileID: 1713536469}
   m_Layer: 0
   m_Name: PlayerObj
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

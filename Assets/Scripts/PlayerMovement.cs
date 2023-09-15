@@ -132,6 +132,9 @@ public class PlayerMovement : MonoBehaviour
 		}
 		if (other.gameObject.tag.Equals ("FinishGame")) {
 			gameplayManager.CeckWin();
+        }
+		if (other.gameObject.tag.Equals ("Enemy")) {
+			gameplayManager.Lose();
 		}
 	}
 }

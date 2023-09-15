@@ -46,6 +46,11 @@ public class GameplayManager : MonoBehaviour
         Cursor.visible = true;
         PauseGame();
     }
+    public void Lose()
+    {
+        PauseGame();
+        ShowLosePanel();
+    }
     public void ShowLosePanel()
     {
         LosePanel.SetActive(true);
