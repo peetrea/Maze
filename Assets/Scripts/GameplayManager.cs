@@ -110,20 +110,19 @@ public class GameplayManager : MonoBehaviour
     }
     public void Restart()
     {
-        for (int i = 1; i <= SaveSystem.LoadInt("curentLevel"); i++)
+        SceneManager.LoadScene("GamePlay");  
+        if(SaveSystem.LoadBool("coinsType"))
         {
-            SceneManager.LoadScene("GamePlay");
-            if(SaveSystem.LoadBool("coinsType"))
+            for (int i = 1; i <= SaveSystem.LoadInt("curentLevelCoins"); i++)
             {
-                score = 0;
-                switch(SaveSystem.LoadInt("curentLevel"))
+                switch(SaveSystem.LoadInt("curentLevelCoins"))
                 {
                     case 1:
                         LevelsManager.instance.Level1Coin();
                         break;
                     case 2:
                         LevelsManager.instance.Level2Coin();
-                        break;
+                    break;
                     case 3:
                         LevelsManager.instance.Level3Coin();
                         break;
@@ -151,9 +150,12 @@ public class GameplayManager : MonoBehaviour
                     break;
                 }
             }
-            else if (SaveSystem.LoadBool("timeType"))
+        }
+        else if (SaveSystem.LoadBool("timeType"))
+        {
+            for (int i = 1; i <= SaveSystem.LoadInt("curentLevelTime"); i++)
             {
-                switch(SaveSystem.LoadInt("curentLevel"))
+                switch(SaveSystem.LoadInt("curentLevelTime"))
                 {
                     case 1:
                         LevelsManager.instance.Level1Time();
@@ -193,105 +195,230 @@ public class GameplayManager : MonoBehaviour
     }
     public void NextLevel()
     {
-        int curentLevel = SaveSystem.LoadInt("curentLevel");
-        curentLevel++;
-        if (curentLevel > LevelsManager.instance.coinLevelsButton.Length)
+        if(SaveSystem.LoadBool("coinsType"))
         {
-            Debug.Log("Ai terminat toate nivelurile disponibile!");
+            int curentLevelCoins = SaveSystem.LoadInt("curentLevelCoins");
+            curentLevelCoins++;
+            if (curentLevelCoins > LevelsManager.instance.coinLevelsButton.Length)
+            {
+                Debug.Log("Ai terminat toate nivelurile cu coins!");
+            }
+            else
+            {
+                SceneManager.LoadScene("GamePlay");
+                SaveSystem.SaveInt("curentLevelCoins", curentLevelCoins);
+            }
+            switch(SaveSystem.LoadInt("curentLevelCoins"))
+            {
+                case 1:
+                    LevelsManager.instance.Level1Coin();
+                    Debug.Log("Level1");
+                    break;
+                case 2:
+                    LevelsManager.instance.Level2Coin();
+                    Debug.Log("Level2");
+                    break;
+                case 3:
+                    LevelsManager.instance.Level3Coin();
+                    Debug.Log("Level3");
+                    break;
+                case 4:
+                    LevelsManager.instance.Level4Coin();
+                    Debug.Log("Level4");
+                    break;
+                case 5:
+                    LevelsManager.instance.Level5Coin();
+                    Debug.Log("Level5");
+                    break;
+                case 6:
+                    LevelsManager.instance.Level6Coin();
+                    Debug.Log("Level6");
+                    break;
+                case 7:
+                    LevelsManager.instance.Level7Coin();
+                    Debug.Log("Level7");
+                    break;
+                case 8:
+                    LevelsManager.instance.Level8Coin();
+                    Debug.Log("Level8");
+                    break;
+                case 9:
+                    LevelsManager.instance.Level9Coin();
+                    Debug.Log("Level9");
+                    break;
+                case 10:
+                    LevelsManager.instance.Level10Coin();
+                    Debug.Log("Level10");
+                    break;
+                break;
+            }
+            LevelsManager.instance.SaveForCoins();
         }
-        else
+        if(SaveSystem.LoadBool("timeType"))
         {
-            SceneManager.LoadScene("GamePlay");
-            SaveSystem.SaveInt("curentLevel", curentLevel);
+            int curentLevelTime = SaveSystem.LoadInt("curentLevelTime");
+            curentLevelTime++;
+            if (curentLevelTime > LevelsManager.instance.coinLevelsButton.Length)
+            {
+                Debug.Log("Ai terminat toate nivelurile cu time!");
+            }
+            else
+            {
+                SceneManager.LoadScene("GamePlay");
+                SaveSystem.SaveInt("curentLevelTime", curentLevelTime);
+            }
+            switch(SaveSystem.LoadInt("curentLevelTime"))
+            {
+                case 1:
+                    LevelsManager.instance.Level1Time();
+                    Debug.Log("Level1");
+                    break;
+                case 2:
+                    LevelsManager.instance.Level2Time();
+                    Debug.Log("Level2");
+                    break;
+                case 3:
+                    LevelsManager.instance.Level3Time();
+                    Debug.Log("Level3");
+                    break;
+                case 4:
+                    LevelsManager.instance.Level4Time();
+                    Debug.Log("Level4");
+                    break;
+                case 5:
+                    LevelsManager.instance.Level5Time();
+                    Debug.Log("Level5");
+                    break;
+                case 6:
+                    LevelsManager.instance.Level6Time();
+                    Debug.Log("Level6");
+                    break;
+                case 7:
+                    LevelsManager.instance.Level7Time();
+                    Debug.Log("Level7");
+                    break;
+                case 8:
+                    LevelsManager.instance.Level8Time();
+                    Debug.Log("Level8");
+                    break;
+                case 9:
+                    LevelsManager.instance.Level9Time();
+                    Debug.Log("Level9");
+                    break;
+                case 10:
+                    LevelsManager.instance.Level10Time();
+                    Debug.Log("Level10");
+                    break;
+                break;
+            }
+            LevelsManager.instance.SaveForTime();
         }
-            if(SaveSystem.LoadBool("coinsType"))
-            {
-                switch(SaveSystem.LoadInt("curentLevel"))
-                {
-                    case 1:
-                        LevelsManager.instance.Level1Coin();
-                        Debug.Log("Level1");
-                        break;
-                    case 2:
-                        LevelsManager.instance.Level2Coin();
-                        Debug.Log("Level2");
-                        break;
-                    case 3:
-                        LevelsManager.instance.Level3Coin();
-                        Debug.Log("Level3");
-                        break;
-                    case 4:
-                        LevelsManager.instance.Level4Coin();
-                        Debug.Log("Level4");
-                        break;
-                    case 5:
-                        LevelsManager.instance.Level5Coin();
-                        Debug.Log("Level5");
-                        break;
-                    case 6:
-                        LevelsManager.instance.Level6Coin();
-                        Debug.Log("Level6");
-                        break;
-                    case 7:
-                        LevelsManager.instance.Level7Coin();
-                        Debug.Log("Level7");
-                        break;
-                    case 8:
-                        LevelsManager.instance.Level8Coin();
-                        Debug.Log("Level8");
-                        break;
-                    case 9:
-                        LevelsManager.instance.Level9Coin();
-                        Debug.Log("Level9");
-                        break;
-                    case 10:
-                        LevelsManager.instance.Level10Coin();
-                        Debug.Log("Level10");
-                        break;
-                    break;
-                }
-                LevelsManager.instance.SaveForCoins();
-            }
-            else if (SaveSystem.LoadBool("timeType"))
-            {
-                switch(SaveSystem.LoadInt("curentLevel"))
-                {
-                    case 1:
-                        LevelsManager.instance.Level1Time();
-                        break;
-                    case 2:
-                        LevelsManager.instance.Level2Time();
-                        break;
-                    case 3:
-                        LevelsManager.instance.Level3Time();
-                        break;
-                    case 4:
-                        LevelsManager.instance.Level4Time();
-                        break;
-                    case 5:
-                        LevelsManager.instance.Level5Time();
-                        break;
-                    case 6:
-                        LevelsManager.instance.Level6Time();
-                        break;
-                    case 7:
-                        LevelsManager.instance.Level7Time();
-                        break;
-                    case 8:
-                        LevelsManager.instance.Level8Time();
-                        break;
-                    case 9:
-                        LevelsManager.instance.Level9Time();
-                        break;
-                    case 10:
-                        LevelsManager.instance.Level10Time();
-                        break;
-                    break;
-                }
-                LevelsManager.instance.SaveForTime();
-            }
         ResumeGame();
     }
+    // public void NextLevel()
+    // {
+    //     int curentLevelCoins = SaveSystem.LoadInt("curentLevelCoins");
+    //     curentLevelCoins++;
+        
+    //     int curentLevelTime = SaveSystem.LoadInt("curentLevelTime");
+    //     curentLevelTime++;
+    //     if (curentLevelCoins > LevelsManager.instance.coinLevelsButton.Length)
+    //     {
+    //         Debug.Log("Ai terminat toate nivelurile disponibile!");
+    //     }
+    //     else
+    //     {
+    //         SceneManager.LoadScene("GamePlay");
+    //         SaveSystem.SaveInt("curentLevelCoins", curentLevelCoins);
+    //     }
+    //         if(SaveSystem.LoadBool("coinsType"))
+    //         {
+    //             switch(SaveSystem.LoadInt("curentLevelCoins"))
+    //             {
+    //                 case 1:
+    //                     LevelsManager.instance.Level1Coin();
+    //                     Debug.Log("Level1");
+    //                     break;
+    //                 case 2:
+    //                     LevelsManager.instance.Level2Coin();
+    //                     Debug.Log("Level2");
+    //                     break;
+    //                 case 3:
+    //                     LevelsManager.instance.Level3Coin();
+    //                     Debug.Log("Level3");
+    //                     break;
+    //                 case 4:
+    //                     LevelsManager.instance.Level4Coin();
+    //                     Debug.Log("Level4");
+    //                     break;
+    //                 case 5:
+    //                     LevelsManager.instance.Level5Coin();
+    //                     Debug.Log("Level5");
+    //                     break;
+    //                 case 6:
+    //                     LevelsManager.instance.Level6Coin();
+    //                     Debug.Log("Level6");
+    //                     break;
+    //                 case 7:
+    //                     LevelsManager.instance.Level7Coin();
+    //                     Debug.Log("Level7");
+    //                     break;
+    //                 case 8:
+    //                     LevelsManager.instance.Level8Coin();
+    //                     Debug.Log("Level8");
+    //                     break;
+    //                 case 9:
+    //                     LevelsManager.instance.Level9Coin();
+    //                     Debug.Log("Level9");
+    //                     break;
+    //                 case 10:
+    //                     LevelsManager.instance.Level10Coin();
+    //                     Debug.Log("Level10");
+    //                     break;
+    //                 break;
+    //             }
+    //             LevelsManager.instance.SaveForCoins();
+    //         }
+    //         else if (SaveSystem.LoadBool("timeType"))
+    //         {
+    //             switch(SaveSystem.LoadInt("curentLevelCoins"))
+    //             {
+    //                 case 1:
+    //                     LevelsManager.instance.Level1Time();
+    //                     break;
+    //                 case 2:
+    //                     LevelsManager.instance.Level2Time();
+    //                     break;
+    //                 case 3:
+    //                     LevelsManager.instance.Level3Time();
+    //                     break;
+    //                 case 4:
+    //                     LevelsManager.instance.Level4Time();
+    //                     break;
+    //                 case 5:
+    //                     LevelsManager.instance.Level5Time();
+    //                     break;
+    //                 case 6:
+    //                     LevelsManager.instance.Level6Time();
+    //                     break;
+    //                 case 7:
+    //                     LevelsManager.instance.Level7Time();
+    //                     break;
+    //                 case 8:
+    //                     LevelsManager.instance.Level8Time();
+    //                     break;
+    //                 case 9:
+    //                     LevelsManager.instance.Level9Time();
+    //                     break;
+    //                 case 10:
+    //                     LevelsManager.instance.Level10Time();
+    //                     break;
+    //                 break;
+    //             }
+    //             LevelsManager.instance.SaveForTime();
+    //         }
+    //     ResumeGame();
+    // }
     public void IncremenentScore()
     {
         score += 1;

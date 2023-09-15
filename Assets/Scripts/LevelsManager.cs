@@ -16,7 +16,8 @@ public class LevelsManager : MonoBehaviour
     public int Columns;
     public float startTime;
     public int Enemys;
-    public int curentLevel;
+    public int curentLevelCoins;
+    public int curentLevelTime;
     public int progressCoins;
     public int progressTime;
 
@@ -47,9 +48,11 @@ public class LevelsManager : MonoBehaviour
         // PlayerPrefs.DeleteAll();
         // Debug.Log("coinsType " + SaveSystem.LoadBool("coinsType"));
         // Debug.Log("timeType " + SaveSystem.LoadBool("timeType"));
-        // Debug.Log("SaveCurrent " + SaveSystem.LoadInt("curentLevel"));
-        // Debug.Log("SaveProgress " + SaveSystem.LoadInt("progressCoins"));
-        // Debug.Log("Current " + curentLevel);
+        Debug.Log("curentLevelCoins " + SaveSystem.LoadInt("curentLevelCoins"));
+        Debug.Log("progressCoins " + SaveSystem.LoadInt("progressCoins"));
+        Debug.Log("curentLevelTime " + SaveSystem.LoadInt("curentLevelTime"));
+        Debug.Log("progressTime " + SaveSystem.LoadInt("progressTime"));
+        // Debug.Log("Current " + curentLevelCoins);
         // Debug.Log("Progress " + progressCoins);
     }
 
@@ -64,8 +67,8 @@ public class LevelsManager : MonoBehaviour
                 SceneManager.LoadScene("GamePlay");
                 timeType = true;
                 SaveSystem.SaveBool("timeType", timeType);
-                curentLevel = levelIndex + 1;
-                SaveSystem.SaveInt("curentLevel", curentLevel);
+                curentLevelTime = levelIndex + 1;
+                SaveSystem.SaveInt("curentLevelTime", curentLevelTime);
                 
                 switch(levelIndex)
                 {
@@ -125,8 +128,8 @@ public class LevelsManager : MonoBehaviour
                 SceneManager.LoadScene("GamePlay");
                 coinsType = true;
                 SaveSystem.SaveBool("coinsType", coinsType);
-                curentLevel = levelIndex + 1;
-                SaveSystem.SaveInt("curentLevel", curentLevel);
+                curentLevelCoins = levelIndex + 1;
+                SaveSystem.SaveInt("curentLevelCoins", curentLevelCoins);
                 startTime = 0f;
                 
                 switch(levelIndex)
@@ -184,19 +187,19 @@ public class LevelsManager : MonoBehaviour
     }
     public void SaveProgress()
     {
-        if (progressCoins <= SaveSystem.LoadInt("curentLevel"))
+        if (progressCoins <= SaveSystem.LoadInt("curentLevelCoins"))
         {
-            progressCoins = SaveSystem.LoadInt("curentLevel");
+            progressCoins = SaveSystem.LoadInt("curentLevelCoins");
             SaveSystem.SaveInt("progressCoins", progressCoins);
             progressCoins = SaveSystem.LoadInt("progressCoins");
-            curentLevel = SaveSystem.LoadInt("curentLevel");
+            curentLevelCoins = SaveSystem.LoadInt("curentLevelCoins");
         }
-        if (progressTime <= SaveSystem.LoadInt("curentLevel"))
+        if (progressTime <= SaveSystem.LoadInt("curentLevelTime"))
         {
-            progressTime = SaveSystem.LoadInt("curentLevel");
+            progressTime = SaveSystem.LoadInt("curentLevelTime");
             SaveSystem.SaveInt("progressTime", progressTime);
             progressTime = SaveSystem.LoadInt("progressTime");
-            curentLevel = SaveSystem.LoadInt("curentLevel");
+            curentLevelTime = SaveSystem.LoadInt("curentLevelTime");
         }
     }
 
@@ -230,140 +233,140 @@ public class LevelsManager : MonoBehaviour
     {
         Rows = 10;
         Columns = 10;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         startTime = 60f;
     }
     public void Level2Time()
     {
         Rows = 15;
         Columns = 15;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         startTime = 70f;
     }
     public void Level3Time()
     {
         Rows = 20;
         Columns = 20;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         startTime = 80f;
     }
     public void Level4Time()
     {
         Rows = 20;
         Columns = 20;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         startTime = 90f;
     }
     public void Level5Time()
     {
         Rows = 25;
         Columns = 25;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         startTime = 100f;
     }
     public void Level6Time()
     {
         Rows = 25;
         Columns = 25;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         startTime = 110f;
     }
     public void Level7Time()
     {
         Rows = 30;
         Columns = 30;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         startTime = 120f;
     }
     public void Level8Time()
     {
         Rows = 30;
         Columns = 30;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         startTime = 130f;
     }
     public void Level9Time()
     {
         Rows = 35;
         Columns = 35;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         startTime = 140f;
     }
     public void Level10Time()
     {
         Rows = 35;
         Columns = 35;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         startTime = 150f;
     }
     public void Level1Coin()
     {
         Rows = 10;
         Columns = 10;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         needScore = 10;
     }
     public void Level2Coin()
     {
         Rows = 15;
         Columns = 15;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         needScore = 15;
     }
     public void Level3Coin()
     {
         Rows = 20;
         Columns = 20;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         needScore = 20;
     }
     public void Level4Coin()
     {
         Rows = 20;
         Columns = 20;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         needScore = 20;
     }
     public void Level5Coin()
     {
         Rows = 25;
         Columns = 25;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         needScore = 25;
     }
     public void Level6Coin()
     {
         Rows = 25;
         Columns = 25;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         needScore = 25;
     }
     public void Level7Coin()
     {
         Rows = 30;
         Columns = 30;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         needScore = 30;
     }
     public void Level8Coin()
     {
         Rows = 30;
         Columns = 30;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         needScore = 30;
     }
     public void Level9Coin()
     {
         Rows = 35;
         Columns = 35;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         needScore = 35;
     }
     public void Level10Coin()
     {
         Rows = 35;
         Columns = 35;
-        Enemys = SaveSystem.LoadInt("curentLevel") * 5;
+        Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
         needScore = 40;
     }
 
