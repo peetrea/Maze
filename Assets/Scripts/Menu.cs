@@ -15,6 +15,7 @@ public class Menu : MonoBehaviour
     void Start()
     {
         levelsManager.StartCoinLevel();
+        levelsManager.UnlockLevels();
         
     }
     void Update()

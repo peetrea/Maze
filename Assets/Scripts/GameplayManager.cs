@@ -18,7 +18,8 @@ public class GameplayManager : MonoBehaviour
     {
         needScore = SaveSystem.LoadInt("needScore");
         ResumeGame();
-        Debug.Log(SaveSystem.LoadInt("curentLevel"));
+        // Debug.Log(SaveSystem.LoadInt("curentLevel"));
+        // Debug.Log(SaveSystem.LoadInt("progressCoins"));
     }
 
     void Update()
@@ -31,6 +32,7 @@ public class GameplayManager : MonoBehaviour
         if (score >= needScore)
         {
             ShowWinPanel();
+            LevelsManager.instance.SaveProgress();
         }
     }
     public void FinishLevel()
@@ -66,7 +68,6 @@ public class GameplayManager : MonoBehaviour
         PausePanel.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        Debug.Log("apelled");
         Time.timeScale = 0f;
         isGamePaused = true;
         PausePanel.SetActive(true);
