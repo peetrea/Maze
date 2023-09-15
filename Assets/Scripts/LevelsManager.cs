@@ -31,15 +31,22 @@ public class LevelsManager : MonoBehaviour
             Destroy(gameObject);
         }
         progressCoins = SaveSystem.LoadInt("progressCoins");
-        // curentLevel = SaveSystem.LoadInt("curentLevel");
+    }
+    private void Start()
+    {
+        coinsType = false;
+        SaveSystem.SaveBool("coinsType", coinsType);
+        timeType = false;
+        SaveSystem.SaveBool("timeType", timeType);
     }
     private void Update()
     {
         // PlayerPrefs.DeleteAll();
+        // Debug.Log("coinsType " + SaveSystem.LoadBool("coinsType"));
         Debug.Log("SaveCurrent " + SaveSystem.LoadInt("curentLevel"));
-        Debug.Log("SaveProgress " + SaveSystem.LoadInt("progressCoins"));
-        Debug.Log("Current " + curentLevel);
-        Debug.Log("Progress " + progressCoins);
+        // Debug.Log("SaveProgress " + SaveSystem.LoadInt("progressCoins"));
+        // Debug.Log("Current " + curentLevel);
+        // Debug.Log("Progress " + progressCoins);
     }
 
     public void StartCoinLevel()
@@ -56,59 +63,37 @@ public class LevelsManager : MonoBehaviour
                 curentLevel = levelIndex + 1;
                 SaveSystem.SaveInt("curentLevel", curentLevel);
                 
-                
-                
                 switch(levelIndex)
                 {
                     case 0:
-                        // Debug.Log("Butonul pentru nivelul " + (levelIndex + 1) + " a fost apăsat.");
-                        Rows = 10;
-                        Columns = 10;
-                        needScore = 0;
+                        Level1Coin();
                         break;
                     case 1:
-                        // Debug.Log("Butonul pentru nivelul " + (levelIndex + 1) + " a fost apăsat.");
-                        Rows = 15;
-                        Columns = 15;
-                        needScore = 0;
+                        Level2Coin();
                         break;
                     case 2:
-                        // Debug.Log("Butonul pentru nivelul " + (levelIndex + 1) + " a fost apăsat.");
-                        Rows = 20;
-                        Columns = 20;
-                        needScore = 0;
+                        Level3Coin();
                         break;
                     case 3:
-                        // Debug.Log("Butonul pentru nivelul " + (levelIndex + 1) + " a fost apăsat.");
-                        Rows = 20;
-                        Columns = 20;
-                        needScore = 0;
+                        Level4Coin();
                         break;
                     case 4:
-                        Debug.Log("Butonul pentru nivelul " + (levelIndex + 1) + " a fost apăsat.");
-                        needScore = 10;
+                        Level5Coin();
                         break;
                     case 5:
-                        Debug.Log("Butonul pentru nivelul " + (levelIndex + 1) + " a fost apăsat.");
-                        needScore = 10;
+                        Level6Coin();
                         break;
                     case 6:
-                        Debug.Log("Butonul pentru nivelul " + (levelIndex + 1) + " a fost apăsat.");
-                        needScore = 10;
+                        Level7Coin();
                         break;
                     case 7:
-                        Debug.Log("Butonul pentru nivelul " + (levelIndex + 1) + " a fost apăsat.");
-                        needScore = 10;
+                        Level8Coin();
                         break;
                     case 8:
-                    Debug.Log("Butonul pentru nivelul " + (levelIndex + 1) + " a fost apăsat.");
-                        needScore = 10;
+                        Level9Coin();
                         break;
                     case 9:
-                        Debug.Log("Butonul pentru nivelul " + (levelIndex + 1) + " a fost apăsat.");
-                        Rows = 20;
-                        Columns = 20;
-                        needScore = 10;
+                        Level10Coin();
                         break;
                     break;
                 }
@@ -144,6 +129,87 @@ public class LevelsManager : MonoBehaviour
                 coinLevelsButton[i].interactable = false;
             }
         }
+    }
+
+    public void Level1Coin()
+    {
+        Rows = 10;
+        Columns = 10;
+        SaveSystem.SaveInt("Rows", Rows);
+        SaveSystem.SaveInt("Columns", Columns);
+        needScore = 0;
+    }
+    public void Level2Coin()
+    {
+        Rows = 15;
+        Columns = 15;
+        SaveSystem.SaveInt("Rows", Rows);
+        SaveSystem.SaveInt("Columns", Columns);
+        needScore = 0;
+    }
+    public void Level3Coin()
+    {
+        Rows = 20;
+        Columns = 20;
+        SaveSystem.SaveInt("Rows", Rows);
+        SaveSystem.SaveInt("Columns", Columns);
+        needScore = 0;
+    }
+    public void Level4Coin()
+    {
+        Rows = 20;
+        Columns = 20;
+        SaveSystem.SaveInt("Rows", Rows);
+        SaveSystem.SaveInt("Columns", Columns);
+        needScore = 0;
+    }
+    public void Level5Coin()
+    {
+        Rows = 20;
+        Columns = 20;
+        SaveSystem.SaveInt("Rows", Rows);
+        SaveSystem.SaveInt("Columns", Columns);
+        needScore = 0;
+    }
+    public void Level6Coin()
+    {
+        Rows = 20;
+        Columns = 20;
+        SaveSystem.SaveInt("Rows", Rows);
+        SaveSystem.SaveInt("Columns", Columns);
+        needScore = 0;
+    }
+    public void Level7Coin()
+    {
+        Rows = 20;
+        Columns = 20;
+        SaveSystem.SaveInt("Rows", Rows);
+        SaveSystem.SaveInt("Columns", Columns);
+        needScore = 0;
+    }
+    public void Level8Coin()
+    {
+        Rows = 20;
+        Columns = 20;
+        SaveSystem.SaveInt("Rows", Rows);
+        SaveSystem.SaveInt("Columns", Columns);
+        needScore = 0;
+    }
+    public void Level9Coin()
+    {
+        Rows = 20;
+        Columns = 20;
+        SaveSystem.SaveInt("Rows", Rows);
+        SaveSystem.SaveInt("Columns", Columns);
+        needScore = 0;
+    }
+    public void Level10Coin()
+    {
+        Rows = 20;
+        Columns = 20;
+        SaveSystem.SaveInt("Rows", Rows);
+        SaveSystem.SaveInt("Columns", Columns);
+        needScore = 0;
     }
 
 }
