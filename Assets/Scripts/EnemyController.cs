@@ -41,8 +41,8 @@ public class EnemyMovement : MonoBehaviour
         {
             // Dacă detectăm un obstacol în față, schimbăm direcția
             ChangeDirection();
-            float distanceToObstacle = hit.distance;
-            Debug.Log("Distanța până la obstacol: " + distanceToObstacle);
+            // float distanceToObstacle = hit.distance;
+            // Debug.Log("Distanța până la obstacol: " + distanceToObstacle);
         }
     }
 

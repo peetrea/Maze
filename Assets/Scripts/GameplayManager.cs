@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using TMPro;
 
@@ -13,43 +15,57 @@ public class GameplayManager : MonoBehaviour
     private bool isGamePaused = false;
     public int score = 0;
     public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI timerText;
+    public float startTime;
+    public float curentTime;
+    private bool isRunning;
     public int needScore;
     void Start()
     {
+        startTime = SaveSystem.LoadFloat("startTime");
         needScore = SaveSystem.LoadInt("needScore");
+        curentTime = startTime;
+        isRunning = true;
         ResumeGame();
-        // Debug.Log(SaveSystem.LoadInt("curentLevel"));
-        // Debug.Log(SaveSystem.LoadInt("progressCoins"));
     }
 
     void Update()
     {
         ShowScore();
         SwitchPause();
+        TimerDecrement();
     }
      public void CeckWin()
     {
-        if (score >= needScore)
+        if (SaveSystem.LoadBool("coinsType"))
         {
-            ShowWinPanel();
-            LevelsManager.instance.SaveProgress();
+            if (score >= needScore)
+            {
+                FinishLevel();
+            }
+        }
+        else if (SaveSystem.LoadBool("timeType"))
+        {
+            FinishLevel();
         }
     }
     public void FinishLevel()
     {
-   
+        LevelsManager.instance.SaveProgress();
+        ShowWinPanel();
+        PauseGame();
     }
     private void ShowWinPanel()
     {
         WinPanel.SetActive(true);
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
-        PauseGame();
     }
     public void Lose()
     {
-        PauseGame();
         ShowLosePanel();
+        PauseGame();
+        PausePanel.SetActive(false);
     }
     public void ShowLosePanel()
     {
@@ -76,7 +92,6 @@ public class GameplayManager : MonoBehaviour
         Cursor.visible = true;
         Time.timeScale = 0f;
         isGamePaused = true;
-        PausePanel.SetActive(true);
     }
     public void ResumeGame()
     {
@@ -90,6 +105,7 @@ public class GameplayManager : MonoBehaviour
     {
         SceneManager.LoadScene("Menu");
         SaveSystem.SaveBool("coinsType", false);
+        SaveSystem.SaveBool("timeType", false);
         // ResumeGame();
     }
     public void Restart()
@@ -137,38 +153,37 @@ public class GameplayManager : MonoBehaviour
             }
             else if (SaveSystem.LoadBool("timeType"))
             {
-                score = 100;
                 switch(SaveSystem.LoadInt("curentLevel"))
                 {
                     case 1:
-                        LevelsManager.instance.Level1Coin();
+                        LevelsManager.instance.Level1Time();
                         break;
                     case 2:
-                        LevelsManager.instance.Level2Coin();
+                        LevelsManager.instance.Level2Time();
                         break;
                     case 3:
-                        LevelsManager.instance.Level3Coin();
+                        LevelsManager.instance.Level3Time();
                         break;
                     case 4:
-                        LevelsManager.instance.Level4Coin();
+                        LevelsManager.instance.Level4Time();
                         break;
                     case 5:
-                        LevelsManager.instance.Level5Coin();
+                        LevelsManager.instance.Level5Time();
                         break;
                     case 6:
-                        LevelsManager.instance.Level6Coin();
+                        LevelsManager.instance.Level6Time();
                         break;
                     case 7:
-                        LevelsManager.instance.Level7Coin();
+                        LevelsManager.instance.Level7Time();
                         break;
                     case 8:
-                        LevelsManager.instance.Level8Coin();
+                        LevelsManager.instance.Level8Time();
                         break;
                     case 9:
-                        LevelsManager.instance.Level9Coin();
+                        LevelsManager.instance.Level9Time();
                         break;
                     case 10:
-                        LevelsManager.instance.Level10Coin();
+                        LevelsManager.instance.Level10Time();
                         break;
                     break;
                 }
@@ -235,45 +250,46 @@ public class GameplayManager : MonoBehaviour
                         break;
                     break;
                 }
+                LevelsManager.instance.SaveForCoins();
             }
             else if (SaveSystem.LoadBool("timeType"))
             {
-                score = 100;
                 switch(SaveSystem.LoadInt("curentLevel"))
                 {
                     case 1:
-                        LevelsManager.instance.Level1Coin();
+                        LevelsManager.instance.Level1Time();
                         break;
                     case 2:
-                        LevelsManager.instance.Level2Coin();
+                        LevelsManager.instance.Level2Time();
                         break;
                     case 3:
-                        LevelsManager.instance.Level3Coin();
+                        LevelsManager.instance.Level3Time();
                         break;
                     case 4:
-                        LevelsManager.instance.Level4Coin();
+                        LevelsManager.instance.Level4Time();
                         break;
                     case 5:
-                        LevelsManager.instance.Level5Coin();
+                        LevelsManager.instance.Level5Time();
                         break;
                     case 6:
-                        LevelsManager.instance.Level6Coin();
+                        LevelsManager.instance.Level6Time();
                         break;
                     case 7:
-                        LevelsManager.instance.Level7Coin();
+                        LevelsManager.instance.Level7Time();
                         break;
                     case 8:
-                        LevelsManager.instance.Level8Coin();
+                        LevelsManager.instance.Level8Time();
                         break;
                     case 9:
-                        LevelsManager.instance.Level9Coin();
+                        LevelsManager.instance.Level9Time();
                         break;
                     case 10:
-                        LevelsManager.instance.Level10Coin();
+                        LevelsManager.instance.Level10Time();
                         break;
                     break;
                 }
-        }
+                LevelsManager.instance.SaveForTime();
+            }
         ResumeGame();
     }
     public void IncremenentScore()
@@ -283,6 +299,31 @@ public class GameplayManager : MonoBehaviour
     private void ShowScore()
     {
         scoreText.text = score.ToString();
+    }
+    public void TimerDecrement()
+    {
+        if (isRunning)
+        {
+            if (SaveSystem.LoadBool("timeType"))
+            {
+                curentTime -= Time.deltaTime;
+
+                if (curentTime <= 0)
+                {
+                    curentTime = 0;
+                    Lose();
+                }
+            }
+            else if (SaveSystem.LoadBool("coinsType"))
+            {
+                curentTime += Time.deltaTime;
+            }
+            int minutes = Mathf.FloorToInt(curentTime / 60);
+            int seconds = Mathf.FloorToInt(curentTime % 60);
+
+            timerText.text = String.Format("{0:00}:{1:00}", minutes, seconds);
+
+        }
     }
    
 

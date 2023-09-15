@@ -34,7 +34,7 @@ public class MazeSpawner : MonoBehaviour
     {
         Rows = SaveSystem.LoadInt("Rows");
         Columns = SaveSystem.LoadInt("Columns");
-        Enemys = 1;
+        Enemys = SaveSystem.LoadInt("Enemys");
         for (int i = 0; i < Enemys; i++)
         {
             int randomRow = Random.Range(0, Rows);
