@@ -116,7 +116,7 @@ public class MazeSpawner : MonoBehaviour
 
             float xFinish = finishColumn * (CellWidth + (AddGaps ? 0.2f : 0));
             float zFinish = finishRow * (CellHeight + (AddGaps ? 0.2f : 0));
-            Instantiate(FinishPrefab, new Vector3(xFinish, 0, zFinish), Quaternion.Euler(0, 0, 0));
+            Instantiate(FinishPrefab, new Vector3(xFinish, 0.001f, zFinish), Quaternion.Euler(0, 0, 0));
         }
 
         if (Pillar != null)
