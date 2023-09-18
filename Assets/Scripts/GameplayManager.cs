@@ -16,6 +16,10 @@ public class GameplayManager : MonoBehaviour
     public int score = 0;
     public TextMeshProUGUI scoreText;
     public TextMeshProUGUI timerText;
+    public TextMeshProUGUI typeText;
+    public TextMeshProUGUI mazeText;
+    public TextMeshProUGUI enemysText;
+    public TextMeshProUGUI goalText;
     public float startTime;
     public float curentTime;
     private bool isRunning;
@@ -26,6 +30,7 @@ public class GameplayManager : MonoBehaviour
         needScore = SaveSystem.LoadInt("needScore");
         curentTime = startTime;
         isRunning = true;
+        ShowInformation();
         ResumeGame();
     }
 
@@ -315,110 +320,6 @@ public class GameplayManager : MonoBehaviour
         }
         ResumeGame();
     }
-    // public void NextLevel()
-    // {
-    //     int curentLevelCoins = SaveSystem.LoadInt("curentLevelCoins");
-    //     curentLevelCoins++;
-        
-    //     int curentLevelTime = SaveSystem.LoadInt("curentLevelTime");
-    //     curentLevelTime++;
-    //     if (curentLevelCoins > LevelsManager.instance.coinLevelsButton.Length)
-    //     {
-    //         Debug.Log("Ai terminat toate nivelurile disponibile!");
-    //     }
-    //     else
-    //     {
-    //         SceneManager.LoadScene("GamePlay");
-    //         SaveSystem.SaveInt("curentLevelCoins", curentLevelCoins);
-    //     }
-    //         if(SaveSystem.LoadBool("coinsType"))
-    //         {
-    //             switch(SaveSystem.LoadInt("curentLevelCoins"))
-    //             {
-    //                 case 1:
-    //                     LevelsManager.instance.Level1Coin();
-    //                     Debug.Log("Level1");
-    //                     break;
-    //                 case 2:
-    //                     LevelsManager.instance.Level2Coin();
-    //                     Debug.Log("Level2");
-    //                     break;
-    //                 case 3:
-    //                     LevelsManager.instance.Level3Coin();
-    //                     Debug.Log("Level3");
-    //                     break;
-    //                 case 4:
-    //                     LevelsManager.instance.Level4Coin();
-    //                     Debug.Log("Level4");
-    //                     break;
-    //                 case 5:
-    //                     LevelsManager.instance.Level5Coin();
-    //                     Debug.Log("Level5");
-    //                     break;
-    //                 case 6:
-    //                     LevelsManager.instance.Level6Coin();
-    //                     Debug.Log("Level6");
-    //                     break;
-    //                 case 7:
-    //                     LevelsManager.instance.Level7Coin();
-    //                     Debug.Log("Level7");
-    //                     break;
-    //                 case 8:
-    //                     LevelsManager.instance.Level8Coin();
-    //                     Debug.Log("Level8");
-    //                     break;
-    //                 case 9:
-    //                     LevelsManager.instance.Level9Coin();
-    //                     Debug.Log("Level9");
-    //                     break;
-    //                 case 10:
-    //                     LevelsManager.instance.Level10Coin();
-    //                     Debug.Log("Level10");
-    //                     break;
-    //                 break;
-    //             }
-    //             LevelsManager.instance.SaveForCoins();
-    //         }
-    //         else if (SaveSystem.LoadBool("timeType"))
-    //         {
-    //             switch(SaveSystem.LoadInt("curentLevelCoins"))
-    //             {
-    //                 case 1:
-    //                     LevelsManager.instance.Level1Time();
-    //                     break;
-    //                 case 2:
-    //                     LevelsManager.instance.Level2Time();
-    //                     break;
-    //                 case 3:
-    //                     LevelsManager.instance.Level3Time();
-    //                     break;
-    //                 case 4:
-    //                     LevelsManager.instance.Level4Time();
-    //                     break;
-    //                 case 5:
-    //                     LevelsManager.instance.Level5Time();
-    //                     break;
-    //                 case 6:
-    //                     LevelsManager.instance.Level6Time();
-    //                     break;
-    //                 case 7:
-    //                     LevelsManager.instance.Level7Time();
-    //                     break;
-    //                 case 8:
-    //                     LevelsManager.instance.Level8Time();
-    //                     break;
-    //                 case 9:
-    //                     LevelsManager.instance.Level9Time();
-    //                     break;
-    //                 case 10:
-    //                     LevelsManager.instance.Level10Time();
-    //                     break;
-    //                 break;
-    //             }
-    //             LevelsManager.instance.SaveForTime();
-    //         }
-    //     ResumeGame();
-    // }
     public void IncremenentScore()
     {
         score += 1;
@@ -427,6 +328,38 @@ public class GameplayManager : MonoBehaviour
     {
         scoreText.text = score.ToString();
     }
+    private void ShowInformation()
+    {
+        ShowType();
+        ShowMazeInfo();
+    }
+
+    private void ShowType()
+    {
+        if (SaveSystem.LoadBool("coinsType"))
+        {
+            typeText.text = "Coins";
+            goalText.text = "Coins: " + SaveSystem.LoadInt("needScore");
+        }
+        else if (SaveSystem.LoadBool("timeType"))
+        {
+            typeText.text = "Time";
+            float startTime = SaveSystem.LoadFloat("startTime");
+            int minutes = Mathf.FloorToInt(startTime / 60);
+            int seconds = Mathf.FloorToInt(startTime % 60);
+            goalText.text = "Time: " + string.Format("{0:00}:{1:00}", minutes, seconds);
+        }
+        else 
+        {
+            typeText.text = "Let's Go!";
+        }
+    }
+    private void ShowMazeInfo()
+    {
+        mazeText.text = "Maze: " + SaveSystem.LoadInt("Rows") + "x" + SaveSystem.LoadInt("Columns");
+        enemysText.text = "Enemys: " + SaveSystem.LoadInt("Enemys");
+    }
+    
     public void TimerDecrement()
     {
         if (isRunning)
