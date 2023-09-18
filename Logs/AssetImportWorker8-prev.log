@@ -1,0 +1,1070 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.2f1 (d74737c6db50) revision 14108471'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit Professional' Language: 'ru' Physical Memory: 32689 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2022.3.2f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker8
+-projectPath
+C:/Users/bosst/Documents/GitHub/Maze
+-logFile
+Logs/AssetImportWorker8.log
+-srvPort
+50498
+Successfully changed project path to: C:/Users/bosst/Documents/GitHub/Maze
+C:/Users/bosst/Documents/GitHub/Maze
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [24892] Host "[IP] 192.168.100.60 [Port] 0 [Flags] 2 [Guid] 607161759 [EditorId] 607161759 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-5K0KTD2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [24892] Host "[IP] 192.168.100.60 [Port] 0 [Flags] 2 [Guid] 607161759 [EditorId] 607161759 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-5K0KTD2) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+Refreshing native plugins compatible for Editor in 9.96 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.2f1 (d74737c6db50)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/bosst/Documents/GitHub/Maze/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3080 Ti (ID=0x2208)
+    Vendor:   NVIDIA
+    VRAM:     12100 MB
+    Driver:   31.0.15.3699
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56228
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.012276 seconds.
+- Loaded All Assemblies, in  0.306 seconds
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.260 seconds
+Domain Reload Profiling: 564ms
+	BeginReloadAssembly (80ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (31ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (60ms)
+	LoadAllAssembliesAndSetupDomain (125ms)
+		LoadAssemblies (77ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (119ms)
+			TypeCache.Refresh (118ms)
+				TypeCache.ScanAssembly (108ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (260ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (203ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (11ms)
+			SetLoadedEditorAssemblies (5ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (137ms)
+			ProcessInitializeOnLoadMethodAttributes (48ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.589 seconds
+Refreshing native plugins compatible for Editor in 2.62 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.414 seconds
+Domain Reload Profiling: 1000ms
+	BeginReloadAssembly (107ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (17ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (35ms)
+	LoadAllAssembliesAndSetupDomain (406ms)
+		LoadAssemblies (224ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (232ms)
+			TypeCache.Refresh (216ms)
+				TypeCache.ScanAssembly (205ms)
+			ScanForSourceGeneratedMonoScriptInfo (13ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (414ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (296ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (55ms)
+			ProcessInitializeOnLoadAttributes (208ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Refreshing native plugins compatible for Editor in 2.85 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3101 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 31 unused Assets / (56.3 KB). Loaded Objects now: 3567.
+Memory consumption went from 120.5 MB to 120.4 MB.
+Total: 2.378500 ms (FindLiveObjects: 0.179800 ms CreateObjectMapping: 0.074400 ms MarkObjects: 2.043200 ms  DeleteObjects: 0.080300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 421413.144379 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Concrete_3/Concrete_3.terrainlayer
+  artifactKey: Guid(78d3db0edf3122e4ca51adfb20132eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Concrete_3/Concrete_3.terrainlayer using Guid(78d3db0edf3122e4ca51adfb20132eec) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e3c1cfb2e060f24286f2f3fc57b304dc') in 0.114708 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 1.828750 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Cracked_Soil_16/Cracked_Soil_16.terrainlayer
+  artifactKey: Guid(d46bdd2871a486748b30113b39fab03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Cracked_Soil_16/Cracked_Soil_16.terrainlayer using Guid(d46bdd2871a486748b30113b39fab03f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '920a9d07104ebb64f9154a295f5bf141') in 0.047372 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Cracked_Soil_16/Cracked_Soil_16_Mask.png
+  artifactKey: Guid(f28ce6617bbadc44aba61878c1110c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Cracked_Soil_16/Cracked_Soil_16_Mask.png using Guid(f28ce6617bbadc44aba61878c1110c49) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '59d1e0aa4d87603540ee4fdcaa05a9b2') in 0.029758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.563 seconds
+Refreshing native plugins compatible for Editor in 3.33 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.771 seconds
+Domain Reload Profiling: 1331ms
+	BeginReloadAssembly (115ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (25ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (384ms)
+		LoadAssemblies (216ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (215ms)
+			TypeCache.Refresh (211ms)
+				TypeCache.ScanAssembly (200ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (771ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (317ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (66ms)
+			ProcessInitializeOnLoadAttributes (209ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 3.27 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3080 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.5 KB). Loaded Objects now: 3576.
+Memory consumption went from 120.7 MB to 120.6 MB.
+Total: 2.681900 ms (FindLiveObjects: 0.257800 ms CreateObjectMapping: 0.127800 ms MarkObjects: 2.253800 ms  DeleteObjects: 0.041300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 20.805030 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Demolished_Tiles_2/Demolished_Tiles_2.terrainlayer
+  artifactKey: Guid(960f2b02e7b6ffb4ea4c7dc5ecc3fc42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Demolished_Tiles_2/Demolished_Tiles_2.terrainlayer using Guid(960f2b02e7b6ffb4ea4c7dc5ecc3fc42) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3725c282d2f923e3b9781028caae423') in 0.063804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Demolished_Tiles_2/Demolished_Tiles_2_Mask.png
+  artifactKey: Guid(0a0c8a89ea519214c8045fcc9e12e738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Demolished_Tiles_2/Demolished_Tiles_2_Mask.png using Guid(0a0c8a89ea519214c8045fcc9e12e738) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '01ca0b1a7a2b019bb90203f213e04e43') in 0.030519 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.560 seconds
+Refreshing native plugins compatible for Editor in 2.64 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.766 seconds
+Domain Reload Profiling: 1323ms
+	BeginReloadAssembly (117ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (32ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (34ms)
+	LoadAllAssembliesAndSetupDomain (366ms)
+		LoadAssemblies (214ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (201ms)
+			TypeCache.Refresh (198ms)
+				TypeCache.ScanAssembly (187ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (766ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (319ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (213ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 3.97 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3080 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.7 KB). Loaded Objects now: 3579.
+Memory consumption went from 120.7 MB to 120.6 MB.
+Total: 3.408600 ms (FindLiveObjects: 0.231500 ms CreateObjectMapping: 0.206800 ms MarkObjects: 2.905800 ms  DeleteObjects: 0.063900 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 14.886739 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Dirty_Brick_Wall_6/Dirty_Brick_Wall_6.terrainlayer
+  artifactKey: Guid(bf0c66daadb2a8a46801a81f2c272a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Dirty_Brick_Wall_6/Dirty_Brick_Wall_6.terrainlayer using Guid(bf0c66daadb2a8a46801a81f2c272a71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec69b7eab612704f5c964a5f541fa8b6') in 0.068471 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Dirty_Brick_Wall_6/Dirty_Brick_Wall_6_Roughness.png
+  artifactKey: Guid(5b1da63be1951f148bc00cebc2965156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Dirty_Brick_Wall_6/Dirty_Brick_Wall_6_Roughness.png using Guid(5b1da63be1951f148bc00cebc2965156) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e360917487a9258a6ffa7be4dadeb174') in 0.027036 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 7.254607 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Dry_Ground_10/Dry_Ground_10.terrainlayer
+  artifactKey: Guid(dac006bfbaae3df4da0e6fbf8cbc4507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Dry_Ground_10/Dry_Ground_10.terrainlayer using Guid(dac006bfbaae3df4da0e6fbf8cbc4507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cafeb0791efae22fcf7e9471988858f0') in 0.049437 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Dry_Ground_10/Dry_Ground_10_Mask.png
+  artifactKey: Guid(c2afe97f2fdf013439d1bb246f1c58d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Dry_Ground_10/Dry_Ground_10_Mask.png using Guid(c2afe97f2fdf013439d1bb246f1c58d8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49cb68a1b8d2e7fc989eff9db9fba398') in 0.022043 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.561 seconds
+Refreshing native plugins compatible for Editor in 3.61 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.725 seconds
+Domain Reload Profiling: 1284ms
+	BeginReloadAssembly (120ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (375ms)
+		LoadAssemblies (210ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (213ms)
+			TypeCache.Refresh (209ms)
+				TypeCache.ScanAssembly (198ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (725ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (273ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (54ms)
+			ProcessInitializeOnLoadAttributes (185ms)
+			ProcessInitializeOnLoadMethodAttributes (16ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 3.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3080 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.7 KB). Loaded Objects now: 3582.
+Memory consumption went from 120.7 MB to 120.6 MB.
+Total: 2.447500 ms (FindLiveObjects: 0.198500 ms CreateObjectMapping: 0.112400 ms MarkObjects: 2.099700 ms  DeleteObjects: 0.036300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.560 seconds
+Refreshing native plugins compatible for Editor in 4.18 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.751 seconds
+Domain Reload Profiling: 1308ms
+	BeginReloadAssembly (124ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (28ms)
+	LoadAllAssembliesAndSetupDomain (371ms)
+		LoadAssemblies (215ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (212ms)
+			TypeCache.Refresh (208ms)
+				TypeCache.ScanAssembly (197ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (751ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (307ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (65ms)
+			ProcessInitializeOnLoadAttributes (206ms)
+			ProcessInitializeOnLoadMethodAttributes (14ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 2.88 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3081 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3585.
+Memory consumption went from 120.9 MB to 120.9 MB.
+Total: 2.829000 ms (FindLiveObjects: 0.299900 ms CreateObjectMapping: 0.173700 ms MarkObjects: 2.313200 ms  DeleteObjects: 0.041600 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 19.374433 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Flaked_Paint_Wall_7/Flaked_Paint_Wall_7.terrainlayer
+  artifactKey: Guid(8312576dfb4918e429a343c3748c8175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Flaked_Paint_Wall_7/Flaked_Paint_Wall_7.terrainlayer using Guid(8312576dfb4918e429a343c3748c8175) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c7506942572d4142412d85b3a6e010d') in 0.054776 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Flaked_Paint_Wall_7/Flaked_Paint_Wall_7_Mask.png
+  artifactKey: Guid(b601a88e9ff2ea244bfdeb6937d55fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Flaked_Paint_Wall_7/Flaked_Paint_Wall_7_Mask.png using Guid(b601a88e9ff2ea244bfdeb6937d55fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3b88ca808c4f9f2cd34c928dfb8ceb9') in 0.036834 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.713636 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Forest_Ground_12/Forest_Ground_12.terrainlayer
+  artifactKey: Guid(e65787d2c1ac6e743a78d18bb74105e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Forest_Ground_12/Forest_Ground_12.terrainlayer using Guid(e65787d2c1ac6e743a78d18bb74105e4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1957b57014c2ae082131fca43406c277') in 0.131828 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 2.005899 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Gravel_11/Gravel_11.terrainlayer
+  artifactKey: Guid(e58770333bc0a1a4cb457a403ba4abfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Gravel_11/Gravel_11.terrainlayer using Guid(e58770333bc0a1a4cb457a403ba4abfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '505151d86fa3731ddc5b85b7eb379224') in 0.140585 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Gravel_11/Gravel_11_Mask.png
+  artifactKey: Guid(a6b9d4e29a42d7a4abd4712fb715b641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Gravel_11/Gravel_11_Mask.png using Guid(a6b9d4e29a42d7a4abd4712fb715b641) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '523d642cfb99cfa59af86773252a53aa') in 0.059353 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.565 seconds
+Refreshing native plugins compatible for Editor in 3.52 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.752 seconds
+Domain Reload Profiling: 1314ms
+	BeginReloadAssembly (119ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (29ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (26ms)
+	LoadAllAssembliesAndSetupDomain (377ms)
+		LoadAssemblies (216ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (213ms)
+			TypeCache.Refresh (209ms)
+				TypeCache.ScanAssembly (199ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (752ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (308ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (207ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
+Refreshing native plugins compatible for Editor in 3.71 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3080 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3588.
+Memory consumption went from 120.7 MB to 120.7 MB.
+Total: 2.798200 ms (FindLiveObjects: 0.232900 ms CreateObjectMapping: 0.145900 ms MarkObjects: 2.380500 ms  DeleteObjects: 0.038500 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 10.864716 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Medieval_Stone_Wall_16/Medieval_Stone_Wall_16.terrainlayer
+  artifactKey: Guid(78a07e2bbee7cdb4b909bb6feb8c2bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Medieval_Stone_Wall_16/Medieval_Stone_Wall_16.terrainlayer using Guid(78a07e2bbee7cdb4b909bb6feb8c2bab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47608f3ebc88016ee57484a7208c6a51') in 0.061608 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Medieval_Stone_Wall_16/Medieval_Stone_Wall_16_Mask.png
+  artifactKey: Guid(5b74a3b2bb7f0a84fb37a8401435f096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Medieval_Stone_Wall_16/Medieval_Stone_Wall_16_Mask.png using Guid(5b74a3b2bb7f0a84fb37a8401435f096) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc9c103bca600072703fe7dd49b71a5d') in 0.043698 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.566 seconds
+Refreshing native plugins compatible for Editor in 3.55 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.754 seconds
+Domain Reload Profiling: 1318ms
+	BeginReloadAssembly (120ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (34ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (383ms)
+		LoadAssemblies (209ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (222ms)
+			TypeCache.Refresh (218ms)
+				TypeCache.ScanAssembly (207ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (755ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (314ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (9ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (64ms)
+			ProcessInitializeOnLoadAttributes (209ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 3.70 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3080 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.7 KB). Loaded Objects now: 3591.
+Memory consumption went from 120.7 MB to 120.7 MB.
+Total: 2.918200 ms (FindLiveObjects: 0.219800 ms CreateObjectMapping: 0.169000 ms MarkObjects: 2.484800 ms  DeleteObjects: 0.044100 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 10.048328 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Mixed_Snow_1/Mixed_Snow_1.terrainlayer
+  artifactKey: Guid(fc4387ca796bbb94a967aa257b02f1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Mixed_Snow_1/Mixed_Snow_1.terrainlayer using Guid(fc4387ca796bbb94a967aa257b02f1de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b00098e69b756a4b5e1a386b88a113f1') in 0.067773 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Mixed_Snow_1/Mixed_Snow_1_Roughness.png
+  artifactKey: Guid(b7ae750a45d29f6459e3e154dd93064b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Mixed_Snow_1/Mixed_Snow_1_Roughness.png using Guid(b7ae750a45d29f6459e3e154dd93064b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e9660a4d2a533ffa5897c8e5b36a15f') in 0.029483 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.351808 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Polished_Marble_34/Polished_Marble_34.terrainlayer
+  artifactKey: Guid(4bc423c2f4d7d77499768241b19fc8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Polished_Marble_34/Polished_Marble_34.terrainlayer using Guid(4bc423c2f4d7d77499768241b19fc8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bb90e498874ad63503409f171fe724d0') in 0.043379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Polished_Marble_34/Polished_Marble_34_Height.png
+  artifactKey: Guid(10add571e2b94794eb7ed359b0e4845c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Polished_Marble_34/Polished_Marble_34_Height.png using Guid(10add571e2b94794eb7ed359b0e4845c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36317800bcdab120d3d5ce84cca7bde9') in 0.015274 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.093306 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Rocky_Grass_17/Rocky_Grass_17.terrainlayer
+  artifactKey: Guid(e2f332c658ba5ea469ddb350d4fe1988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Rocky_Grass_17/Rocky_Grass_17.terrainlayer using Guid(e2f332c658ba5ea469ddb350d4fe1988) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62c181142f5408ee4ed4630f9e02800b') in 0.045437 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Rocky_Grass_17/Rocky_Grass_17_Roughness.png
+  artifactKey: Guid(2740f138bdaff124dbeef31b96f7780f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Rocky_Grass_17/Rocky_Grass_17_Roughness.png using Guid(2740f138bdaff124dbeef31b96f7780f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1de8eef683b17705081ad2c8f96adb28') in 0.020922 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 8.017900 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Rocky_Ground_15/Rocky_Ground_15.terrainlayer
+  artifactKey: Guid(f35ffdc5c26bad54abab7bf58a85924c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Rocky_Ground_15/Rocky_Ground_15.terrainlayer using Guid(f35ffdc5c26bad54abab7bf58a85924c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78e0c815eb3ab09a9fe3055afbce447e') in 0.050996 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Rocky_Ground_15/Rocky_Ground_15_Normal.png
+  artifactKey: Guid(ed1b7958772eba04591d8e6d7a2bf09a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Rocky_Ground_15/Rocky_Ground_15_Normal.png using Guid(ed1b7958772eba04591d8e6d7a2bf09a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '187b3c604825f3de079a7d4c3ebb9bc6') in 0.029960 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 3.618654 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Rocky_Sand_1/Rocky_Sand_1.terrainlayer
+  artifactKey: Guid(00b925b8df90b554f8fa41da22ada622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Rocky_Sand_1/Rocky_Sand_1.terrainlayer using Guid(00b925b8df90b554f8fa41da22ada622) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89596c65faa36043fb2d7e98a28120e2') in 0.049923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 3.626834 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Rough_Rock_1/Rough_Rock_1.terrainlayer
+  artifactKey: Guid(e2850719915ccbb44b5a52c2df06c911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Rough_Rock_1/Rough_Rock_1.terrainlayer using Guid(e2850719915ccbb44b5a52c2df06c911) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c529055e86b572822d308f34b50a3158') in 0.058244 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Rough_Rock_1/Rough_Rock_1_Normal.png
+  artifactKey: Guid(e78f129c4c7b06f43874f7f75c622774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Rough_Rock_1/Rough_Rock_1_Normal.png using Guid(e78f129c4c7b06f43874f7f75c622774) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '146e9c6001f5c29ed78d0ff1d1db9890') in 0.112351 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.301687 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Rusty_Metal_11/Rusty_Metal_11.terrainlayer
+  artifactKey: Guid(0bbf3c4569243a741a794d5398177bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Rusty_Metal_11/Rusty_Metal_11.terrainlayer using Guid(0bbf3c4569243a741a794d5398177bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ac8740ca68063a6f00e4197d0bac8a5') in 0.042870 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Rusty_Metal_11/Rusty_Metal_11_Mask.png
+  artifactKey: Guid(43f50c306198b7441ad8f3876a511005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Rusty_Metal_11/Rusty_Metal_11_Mask.png using Guid(43f50c306198b7441ad8f3876a511005) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '49fde6db55f4867b58cf07988d107ba6') in 0.020789 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 6.285577 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Snowy_Concrete_Pavement_3/Snowy_Concrete_Pavement_3.terrainlayer
+  artifactKey: Guid(b209dd2c616f8174f88e2d5efb628569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Snowy_Concrete_Pavement_3/Snowy_Concrete_Pavement_3.terrainlayer using Guid(b209dd2c616f8174f88e2d5efb628569) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f0e94075cf921030fc7c8865d6b00bec') in 0.065216 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Snowy_Concrete_Pavement_3/Snowy_Concrete_Pavement_3_Normal.png
+  artifactKey: Guid(5e05d991b5813424e95dce501b351b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Snowy_Concrete_Pavement_3/Snowy_Concrete_Pavement_3_Normal.png using Guid(5e05d991b5813424e95dce501b351b6e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'acf74551ca5b8af519f05c15e2b0bafc') in 0.056049 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.250243 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Snowy_Rock_21/Snowy_Rock_21.terrainlayer
+  artifactKey: Guid(32beb8079b711d84292398e1c3a14f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Snowy_Rock_21/Snowy_Rock_21.terrainlayer using Guid(32beb8079b711d84292398e1c3a14f8b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8567445e7681a748afe5931545f028d4') in 0.001872 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000011 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Snowy_Rock_21/Snowy_Rock_21_Normal.png
+  artifactKey: Guid(ab10f30155bf0014b923f6e02958b5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Snowy_Rock_21/Snowy_Rock_21_Normal.png using Guid(ab10f30155bf0014b923f6e02958b5d2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4f14f2d681f6986c0352b6d05c9c37ad') in 0.041568 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Snowy_Rock_21/Snowy_Rock_21_Roughness.png
+  artifactKey: Guid(88a4bfec0a8653d4fa85c98724de840d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Snowy_Rock_21/Snowy_Rock_21_Roughness.png using Guid(88a4bfec0a8653d4fa85c98724de840d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9581ba39531271302830bf842ffaf455') in 0.100603 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 1.750692 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Wood_Planks_40/Wood_Planks_40.terrainlayer
+  artifactKey: Guid(ef3607f6efeb7534c9d5b4021e9f29b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Wood_Planks_40/Wood_Planks_40.terrainlayer using Guid(ef3607f6efeb7534c9d5b4021e9f29b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bfc52a6681e050667cf31a4c8cacc92a') in 0.038923 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Wood_Planks_40/Wood_Planks_40_Normal.png
+  artifactKey: Guid(2e5c5bc7119d7914bbde7cc94f1e698c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Wood_Planks_40/Wood_Planks_40_Normal.png using Guid(2e5c5bc7119d7914bbde7cc94f1e698c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20876ec97a5f4d3db12f0d7e4b77169d') in 0.022328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.515 seconds
+Refreshing native plugins compatible for Editor in 2.62 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.673 seconds
+Domain Reload Profiling: 1185ms
+	BeginReloadAssembly (109ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (26ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (25ms)
+	LoadAllAssembliesAndSetupDomain (346ms)
+		LoadAssemblies (198ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (195ms)
+			TypeCache.Refresh (192ms)
+				TypeCache.ScanAssembly (184ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (673ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (304ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (57ms)
+			ProcessInitializeOnLoadAttributes (208ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 3.12 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3080 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.7 KB). Loaded Objects now: 3596.
+Memory consumption went from 120.7 MB to 120.7 MB.
+Total: 2.682200 ms (FindLiveObjects: 0.188200 ms CreateObjectMapping: 0.112000 ms MarkObjects: 2.342000 ms  DeleteObjects: 0.039400 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 138.349121 seconds.
+  path: Assets/FarlandSkies/Skyboxes/CloudyCrown_04_Sunset/CloudyCrown_Sunset.mat
+  artifactKey: Guid(169a1b8f06c17c84e8de491f2bfef986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/FarlandSkies/Skyboxes/CloudyCrown_04_Sunset/CloudyCrown_Sunset.mat using Guid(169a1b8f06c17c84e8de491f2bfef986) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68f4190576d1c1cdd1fb614b6c144c0f') in 0.069447 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 7
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.518 seconds
+Refreshing native plugins compatible for Editor in 2.49 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.700 seconds
+Domain Reload Profiling: 1215ms
+	BeginReloadAssembly (109ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (3ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (24ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (29ms)
+	LoadAllAssembliesAndSetupDomain (345ms)
+		LoadAssemblies (200ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (192ms)
+			TypeCache.Refresh (189ms)
+				TypeCache.ScanAssembly (180ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (700ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (289ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (58ms)
+			ProcessInitializeOnLoadAttributes (193ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (9ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (7ms)
+Refreshing native plugins compatible for Editor in 3.84 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3080 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3637.
+Memory consumption went from 121.0 MB to 121.0 MB.
+Total: 2.497600 ms (FindLiveObjects: 0.191400 ms CreateObjectMapping: 0.126600 ms MarkObjects: 2.140900 ms  DeleteObjects: 0.038300 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 218.385203 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Ice_15/Ice_15.terrainlayer
+  artifactKey: Guid(1cddc5b9a0976cf4c8d5b75f5b58c586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Ice_15/Ice_15.terrainlayer using Guid(1cddc5b9a0976cf4c8d5b75f5b58c586) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7fdffc0c769518b7c43422c3d291d461') in 0.070712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Ice_15/Ice_15_Normal.png
+  artifactKey: Guid(d7c8b258afb42f74dbe0793761a67454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Ice_15/Ice_15_Normal.png using Guid(d7c8b258afb42f74dbe0793761a67454) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c961e852e33cf80f12c752c5c1492b2') in 0.065394 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Game Buffs/Free Realistic Textures/Textures/Ice_15/Ice_15_AO.png
+  artifactKey: Guid(ab8a41cadf29e0441a99b0b31326404b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Game Buffs/Free Realistic Textures/Textures/Ice_15/Ice_15_AO.png using Guid(ab8a41cadf29e0441a99b0b31326404b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '482666a178b39ed9a86265b48c698ccc') in 0.072206 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Prepare
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\bosst\Documents\GitHub\Maze\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+- Loaded All Assemblies, in  0.557 seconds
+Refreshing native plugins compatible for Editor in 2.59 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.698 seconds
+Domain Reload Profiling: 1252ms
+	BeginReloadAssembly (120ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (28ms)
+	RebuildNativeTypeToScriptingClass (13ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (362ms)
+		LoadAssemblies (216ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (201ms)
+			TypeCache.Refresh (198ms)
+				TypeCache.ScanAssembly (190ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (698ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (313ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (62ms)
+			ProcessInitializeOnLoadAttributes (213ms)
+			ProcessInitializeOnLoadMethodAttributes (17ms)
+			AfterProcessingInitializeOnLoad (10ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 3.68 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3080 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 22 unused Assets / (30.6 KB). Loaded Objects now: 3640.
+Memory consumption went from 121.0 MB to 121.0 MB.
+Total: 2.502200 ms (FindLiveObjects: 0.224300 ms CreateObjectMapping: 0.135200 ms MarkObjects: 2.096900 ms  DeleteObjects: 0.045200 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

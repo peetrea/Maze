@@ -48,10 +48,10 @@ public class LevelsManager : MonoBehaviour
         // PlayerPrefs.DeleteAll();
         // Debug.Log("coinsType " + SaveSystem.LoadBool("coinsType"));
         // Debug.Log("timeType " + SaveSystem.LoadBool("timeType"));
-        Debug.Log("curentLevelCoins " + SaveSystem.LoadInt("curentLevelCoins"));
-        Debug.Log("progressCoins " + SaveSystem.LoadInt("progressCoins"));
-        Debug.Log("curentLevelTime " + SaveSystem.LoadInt("curentLevelTime"));
-        Debug.Log("progressTime " + SaveSystem.LoadInt("progressTime"));
+        // Debug.Log("curentLevelCoins " + SaveSystem.LoadInt("curentLevelCoins"));
+        // Debug.Log("progressCoins " + SaveSystem.LoadInt("progressCoins"));
+        // Debug.Log("curentLevelTime " + SaveSystem.LoadInt("curentLevelTime"));
+        // Debug.Log("progressTime " + SaveSystem.LoadInt("progressTime"));
         // Debug.Log("Current " + curentLevelCoins);
         // Debug.Log("Progress " + progressCoins);
     }

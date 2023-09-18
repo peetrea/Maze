@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Audio;
 
 public class Menu : MonoBehaviour
 {
@@ -12,6 +13,8 @@ public class Menu : MonoBehaviour
     public GameObject timeLevels;
     public GameObject levelType;
     public GameObject settings;
+    private bool isMusicActivate;
+    public AudioMixer audioMixer;
     void Start()
     {
         levelsManager.StartCoinLevel();
@@ -75,5 +78,19 @@ public class Menu : MonoBehaviour
         // Ieșiți din aplicație sau joc (funcționează în build-uri standalone)
         Application.Quit();
         Debug.LogError("quit");
+    }
+    public void MusicToggle()
+    {
+        Debug.Log(isMusicActivate);
+        // Debug.Log((audioMixer.GetFloat("MenuMusic")));
+        isMusicActivate = !isMusicActivate;
+        if(isMusicActivate)
+        {
+            audioMixer.SetFloat("musicVolume", -40f);
+        }
+        else
+        {
+            audioMixer.SetFloat("musicVolume", -80f);
+        }
     }
 }

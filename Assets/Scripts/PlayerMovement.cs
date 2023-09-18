@@ -6,6 +6,8 @@ using TMPro;
 public class PlayerMovement : MonoBehaviour
 {
     public GameplayManager gameplayManager;
+    public AudioSource coinAudioSource;
+    
     [Header("Movement")]
     public float moveSpeed;
     public float moveSpeedNormal;
@@ -30,8 +32,10 @@ public class PlayerMovement : MonoBehaviour
     Vector3 moveDirection;
     Rigidbody rb;
     [HideInInspector] public TextMeshProUGUI text_speed;
+    private AudioSource audioSource;
     private void Start()
     {
+        audioSource = GetComponent<AudioSource>();
         moveSpeedNormal = moveSpeed;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
@@ -62,6 +66,7 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
+        
 
         if(Input.GetKey(jumpKey) && readyToJump)
         {
@@ -76,9 +81,13 @@ public class PlayerMovement : MonoBehaviour
     private void MovePlayer()
     {
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        
 
         if(grounded)
+        {
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        }
+            
 
         else if(!grounded)
             rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
@@ -127,6 +136,7 @@ public class PlayerMovement : MonoBehaviour
 
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.tag.Equals ("Coin")) {
+             coinAudioSource.Play();
 			Destroy(other.gameObject);
             gameplayManager.IncremenentScore();
 		}
