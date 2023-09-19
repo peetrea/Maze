@@ -12,6 +12,7 @@ public class GameplayManager : MonoBehaviour
     public GameObject WinPanel;
     public GameObject LosePanel;
     public GameObject PausePanel;
+    public GameObject Settings;
     private bool isGamePaused = false;
     public int score = 0;
     public TextMeshProUGUI scoreText;
@@ -54,8 +55,16 @@ public class GameplayManager : MonoBehaviour
             FinishLevel();
         }
     }
+    public void SaveMoeny()
+    {
+        int money;
+        money = SaveSystem.LoadInt("Money");
+        money += score;
+        SaveSystem.SaveInt("Money", money);
+    }
     public void FinishLevel()
     {
+        SaveMoeny();
         LevelsManager.instance.SaveProgress();
         ShowWinPanel();
         PauseGame();
@@ -68,6 +77,7 @@ public class GameplayManager : MonoBehaviour
     }
     public void Lose()
     {
+        SaveMoeny();
         ShowLosePanel();
         PauseGame();
         PausePanel.SetActive(false);
@@ -108,10 +118,21 @@ public class GameplayManager : MonoBehaviour
     }
     public void BackToMenu()
     {
+        SaveMoeny();
         SceneManager.LoadScene("Menu");
         SaveSystem.SaveBool("coinsType", false);
         SaveSystem.SaveBool("timeType", false);
         // ResumeGame();
+    }
+    public void OpenSettings()
+    {
+        PausePanel.SetActive(false);
+        Settings.SetActive(true);
+    }
+    public void BackToMenuGame()
+    {
+        Settings.SetActive(false);
+        PausePanel.SetActive(true);
     }
     public void Restart()
     {

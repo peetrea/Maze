@@ -234,70 +234,70 @@ public class LevelsManager : MonoBehaviour
         Rows = 10;
         Columns = 10;
         Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
-        startTime = 60f;
+        startTime = 120f;
     }
     public void Level2Time()
     {
         Rows = 15;
         Columns = 15;
         Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
-        startTime = 70f;
+        startTime = 120f;
     }
     public void Level3Time()
     {
         Rows = 20;
         Columns = 20;
         Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
-        startTime = 80f;
+        startTime = 180f;
     }
     public void Level4Time()
     {
         Rows = 20;
         Columns = 20;
         Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
-        startTime = 90f;
+        startTime = 180f;
     }
     public void Level5Time()
     {
         Rows = 25;
         Columns = 25;
         Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
-        startTime = 100f;
+        startTime = 240f;
     }
     public void Level6Time()
     {
         Rows = 25;
         Columns = 25;
         Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
-        startTime = 110f;
+        startTime = 240f;
     }
     public void Level7Time()
     {
         Rows = 30;
         Columns = 30;
         Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
-        startTime = 120f;
+        startTime = 300f;
     }
     public void Level8Time()
     {
         Rows = 30;
         Columns = 30;
         Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
-        startTime = 130f;
+        startTime = 300f;
     }
     public void Level9Time()
     {
         Rows = 35;
         Columns = 35;
         Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
-        startTime = 140f;
+        startTime = 360f;
     }
     public void Level10Time()
     {
         Rows = 35;
         Columns = 35;
         Enemys = SaveSystem.LoadInt("curentLevelCoins") * 5;
-        startTime = 150f;
+        startTime = 360f;
     }
     public void Level1Coin()
     {

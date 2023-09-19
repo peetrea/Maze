@@ -376,6 +376,7 @@
 "Assets/Scripts/RollerBall.cs"
 "Assets/Scripts/SaveSystem.cs"
 "Assets/Scripts/TreeMazeGenerator.cs"
+"Assets/SounsManager.cs"
 -langversion:9.0
 
 /deterministic

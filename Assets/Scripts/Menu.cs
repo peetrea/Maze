@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine.Audio;
+using UnityEngine.UI;
+using TMPro;
 
 public class Menu : MonoBehaviour
 {
@@ -13,10 +14,11 @@ public class Menu : MonoBehaviour
     public GameObject timeLevels;
     public GameObject levelType;
     public GameObject settings;
-    private bool isMusicActivate;
-    public AudioMixer audioMixer;
+    public TextMeshProUGUI moneyText;
+    public int money;
     void Start()
     {
+        moneyText.text = SaveSystem.LoadInt("Money").ToString();
         levelsManager.StartCoinLevel();
         levelsManager.StartTimeLevel();
         levelsManager.UnlockLevels();
@@ -79,18 +81,5 @@ public class Menu : MonoBehaviour
         Application.Quit();
         Debug.LogError("quit");
     }
-    public void MusicToggle()
-    {
-        Debug.Log(isMusicActivate);
-        // Debug.Log((audioMixer.GetFloat("MenuMusic")));
-        isMusicActivate = !isMusicActivate;
-        if(isMusicActivate)
-        {
-            audioMixer.SetFloat("musicVolume", -40f);
-        }
-        else
-        {
-            audioMixer.SetFloat("musicVolume", -80f);
-        }
-    }
+    
 }
